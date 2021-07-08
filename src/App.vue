@@ -19,9 +19,10 @@ export default {
   min-height: 100vh;
   height: 1px;
   border: 1px red solid;
-  display: flex;
+  display: flex-block;
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  width: 100vw;
 }
 </style>
