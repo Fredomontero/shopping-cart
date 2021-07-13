@@ -1,10 +1,21 @@
 <template>
-  <h2>Item List</h2>
+  <div class="item-container">
+    <Item v-for="product in products" :key="product.id" :item="product" />
+  </div>
 </template>
 
 <script>
+
+import Item from './Item.vue';
+
 export default {
-  name: 'ItemList'  
+  name: 'ItemList',
+  props: {
+    products: Array
+  },
+  components: {
+    Item
+  }
 }
 </script>
 
