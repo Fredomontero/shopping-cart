@@ -62,7 +62,6 @@ export default {
     width: 60px;
     height: 40px;
     text-align: center;
-
   }
 
   .delete-icon i{
