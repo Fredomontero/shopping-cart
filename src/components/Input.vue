@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
   .input-container {
-    margin: 30px 0px;
+    margin-bottom: 30px;
     border: 1px solid #888888;
     height: 50px;
     width: 70%;
@@ -39,7 +39,7 @@ export default {
   .input-container button {
     width: 5%;
     height: 100%;
-    background-color: 	#00a86b;
+    background-color: #00a86b;
     color: #fff;
     border: none;
     font-size: 20px;

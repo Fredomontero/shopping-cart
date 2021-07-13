@@ -16,13 +16,14 @@ export default {
 
 <style>
 #app {
+  /* height: 1px; */
   min-height: 100vh;
-  height: 1px;
   border: 1px red solid;
   display: flex-block;
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
 }
 </style>

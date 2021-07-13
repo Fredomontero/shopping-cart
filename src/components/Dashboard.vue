@@ -2,8 +2,9 @@
   <div class="dashboard-container">
     <h1>Shopping List</h1>
     <Input v-if="showInputField"/>
-    <button @click="toggleInputField" class="add-btn">+</button>
-    <ItemList/>
+    <button v-if="showInputField" @click="toggleInputField" class="close-btn">×</button>
+    <button v-else @click="toggleInputField" class="add-btn">+</button>
+    <ItemList :products="products"/>
   </div>
 </template>
 
@@ -11,6 +12,8 @@
 
 import Input from './Input.vue';
 import ItemList from "./ItemList.vue";
+
+import { products } from '../data';
 
 export default {
   name: 'Dashboard',
@@ -20,7 +23,8 @@ export default {
   },
   data(){
     return {
-      showInputField: false
+      showInputField: false,
+      products: products
     }
   },
   methods: {
@@ -42,10 +46,25 @@ export default {
   .dashboard-container h1 {
     font-size: 35px;
     font-weight: 400;
+    margin-bottom: 30px;
   }
 
   .add-btn {
-    position: absolute;
+    position: fixed;
+    background-color: #00a86b;
+    border-radius: 25px;
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border: none;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    position: fixed;
     background-color: #cd5c5c;
     border-radius: 25px;
     font-size: 30px;
@@ -57,4 +76,5 @@ export default {
     right: 30px;
     cursor: pointer;
   }
+
 </style>
