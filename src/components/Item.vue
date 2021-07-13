@@ -61,6 +61,8 @@ export default {
     width: 60px;
     height: 40px;
     text-align: center;
+    background-color:red;
+    color: #fff;
   }
 
   .delete-icon i{
