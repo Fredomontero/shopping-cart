@@ -35,7 +35,6 @@ export default {
   }
 
   .icons {
-    border: cadetblue 1px solid;
     width: 35%;
     display: flex;
     justify-content: space-between;
@@ -43,7 +42,8 @@ export default {
   }
 
   .check-icon{
-    border: coral 1px solid;
+    background-color: #71bc78;
+    color: #fff;
     width: 60px;
     height: 40px;
     text-align: center;
@@ -57,12 +57,11 @@ export default {
   }
 
   .delete-icon{
-    border: coral 1px solid;
+    background-color: #ff2052;
+    color: #fff;
     width: 60px;
     height: 40px;
     text-align: center;
-    background-color:red;
-    color: #fff;
   }
 
   .delete-icon i{
